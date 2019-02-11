@@ -2,8 +2,8 @@ $(document).ready(function(){
 
   $("#startbutton").click( function() {
 
-    $("h1").css({
-      "font-color": "red",
+    $("h1").animate({
+      "font-size": "20px",
     })
   })
 
