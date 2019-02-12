@@ -1,10 +1,34 @@
 $(document).ready(function(){
 
-  $("#startbutton").click( function() {
+  $("#button").click(function(){
 
-    $("h1").animate({
-      "font-size": "20px",
-    })
+    $("img").css({
+
+      'border': "solid 2px red",
+
+    });
+
+    $("#heading").css({
+
+      "color":"#ff0000",
+
+    });
+
+    $("#heading").animate({
+
+      fontSize: '5em'}, "slow"
+
+    );
+
+    $("#heading").animate({
+
+      fontSize: '1em'}, "slow"
+
+    );
+
+
+
+
   })
 
 });
