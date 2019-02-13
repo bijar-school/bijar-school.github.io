@@ -14,7 +14,6 @@
    href = "simple_stylesheet.css" />
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="simple_js.js"></script>
 
  </head>
 
@@ -63,6 +62,38 @@
 
  <input type="button" id="button" value="Start Animation">
 
+<script>
+  $("#button").click(function(){
+
+    $("img").css({
+
+      'border': "solid 2px red",
+
+    });
+
+    $("#heading").css({
+
+      "color":"#ff0000",
+
+    });
+
+    $("#heading").animate({
+
+      fontSize: '200%'}, "slow"
+
+    );
+
+    $("#heading").animate({
+
+      fontSize: '100%'}, "slow"
+
+    );
+
+
+
+
+  })
+</script>
 
  </body>
 
