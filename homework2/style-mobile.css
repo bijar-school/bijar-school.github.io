@@ -1,24 +1,11 @@
-/* for 980px or less */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px){
+@media screen
+and (min-width : 375px)
+and (max-width : 812px) {
 
-  #header{
-    width:auto;
-  }
-  div.content{
-    width:auto;
-  }
-  div.col-right{
-    width:auto;
-  }
   div.sidebar-left{
-    display:none;
+    float:none;
   }
-  #footer{
-    width:auto;
-  }
-  
+
 }
 
 
