@@ -10,7 +10,7 @@
     width:auto;
   }
   div.sidebar-left{
-    width:auto;
+    display:none;
   }
   div#footer{
     width:auto;
