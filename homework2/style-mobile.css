@@ -1,19 +1,19 @@
 /* for 980px or less */
 @media screen and (max-width: 980px) {
   div#header{
-    width:50%;
+    width:auto;
   }
   div.content{
-    width:50%;
+    width:auto;
   }
   div.col-right{
-      width:50%;
+    width:auto;
   }
   div.sidebar-left{
-    width:50%;
+    width:auto;
   }
   div#footer{
-    width:50%;
+    width:auto;
   }
 }
 
