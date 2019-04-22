@@ -3,7 +3,7 @@
 and (min-device-width : 375px)
 and (max-device-width : 812px){
 
-  div#header{
+  #header{
     width:auto;
   }
   div.content{
@@ -15,7 +15,7 @@ and (max-device-width : 812px){
   div.sidebar-left{
     display:none;
   }
-  div#footer{
+  #footer{
     width:auto;
   }
   
