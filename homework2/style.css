@@ -1,15 +1,10 @@
 	/* for 980px and smaller */
 @media screen and (max-width: 980px) {
 
-	#pagewrap {
-		width: 34%;
+	div {
+		width: 35%;
 	}
-	#col-right {
-		width:35%;
-	}
-	#col-left {
-		width: 30%;
-	}
+
 }
 
 	body, h1, h2, h3, p, img, ul, li{
