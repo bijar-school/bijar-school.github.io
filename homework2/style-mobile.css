@@ -1,5 +1,23 @@
-@media screen and (max-width: 1200px){
-  div#header.clear{
+@media only screen and (max-width: 1180px) {
+  /* For mobile phones: */
+  body{
+    width:100%;
+  }
+  div#header{
+    width:100%;
+  }
+  div#content{
+    width:100%;
+  }
+  div#col-right{
     float:none;
+    width:100%;
+  }
+  div#sidebar-left{
+    float:none;
+    width:100%;
+  }
+  div#footer{
+    width:100%;
   }
 }
