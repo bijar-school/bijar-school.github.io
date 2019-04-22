@@ -1,1 +1,0 @@
-# bijar-school.github.io
