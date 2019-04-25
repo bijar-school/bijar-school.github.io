@@ -1,4 +1,3 @@
-@media screen and (max-width: 1180px) {
   body, h1, h2, h3, p, img, ul, li{
     border:0; margin:0; padding:0;
   }
@@ -32,8 +31,7 @@
     margin:0 auto; /* by declaring a width on any block element (like a div), giving it a css property of margin:0 auto will center that block element on page */
     min-height:130px;	/* setting a minimum height of an element means that it can grow to be bigger, if there is a lot of content in it. However, if it doesn't have enough content, it will be at the very least (in this example) 130 pixels tall */
     padding:45px 15px 15px;	/* by setting a padding, the content within a HTML element will not touch the edges of that element (by adding padding to an element, it actually makes that element appear wider and/or taller.  In this case, the header div is now 15px wider and taller on each side. */
-    width:100%;
-
+    width:435px;
         }
 
   ul.navigation {
@@ -64,7 +62,7 @@
 
   div.content{
     margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
-    width:100%;;
+    width:450px;
   }
 
   div.col-right{
@@ -118,5 +116,3 @@
   .clear{
     clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
   }
-
-}
