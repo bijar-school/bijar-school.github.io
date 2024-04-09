@@ -2,12 +2,74 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/components/segment.min.css" />
+  <title>Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div class="ui container">
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
+  <script language='javascript'>
+    $(document).ready(function(){
+       $('.ui.accordion').accordion();
+    });
+  </script>
+  <div class="ui menu">
+    <a class="item" href="index.html">Home</a>
+    <a class="active item" href="products.html">Products</a>
+    <a class="item" href="contact-us.html">Contact Us</a>
+    <a class="item" href="location.html">Location</a>
+    <a class="item" href="extra.html">Extra</a>
+  </div>
+  <div class="ui accordion">
+    <div class="title">
+      <i class="dropdown icon"></i>
+      Glurby 
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="image">
+          <img src="images/furby.png" alt="A Healthy Glurby">
+          <p>
+            <ul>
+              <li>A Glurby is a type of domesticated anomaly. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world. Buy now!</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="title">
+      <i class="dropdown icon"></i>
+      Super-Duper-Hero
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="image">
+          <img src="images/superhero.png" alt="A Super-Duper-Hero">
+          <p>
+            <ul>
+              <li>Superheros are a dime-a-dozen. Super-Duper-Heroes are very rare, and scarcity is the mother of value. Buy now!</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="title">
+      <i class="dropdown icon"></i>
+      Small Souljas
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="image">
+          <img src="images/soulja.png" alt="A Small Soulja">
+          <p>
+            <ul>
+              <li>Fight fire with enlightenment! Our new line of Small Soulja Toys will bring peace and harmony to the battlefield! Buy now!</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
