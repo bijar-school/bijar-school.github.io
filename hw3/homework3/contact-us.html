@@ -4,17 +4,30 @@
   <meta charset="UTF-8" />
   <title>Contact Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    div.fixed {
+      position: fixed;
+      top: 0;
+      padding: 0px;
+    }
+    </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="ui menu">
-    <a class="item" href="index.html">Home</a>
-    <a class="item" href="products.html">Products</a>
-    <a class="active item" href="contact-us.html">Contact Us</a>
-    <a class="item" href="location.html">Location</a>
-    <a class="item" href="extra.html">Extra</a>
+  <div class="fixed">
+    <div class="ui menu">
+      <a class="item" href="index.html">Home</a>
+      <a class="item" href="products.html">Products</a>
+      <a class="active item" href="contact-us.html">Contact Us</a>
+      <a class="item" href="location.html">Location</a>
+      <a class="item" href="extra.html">Extra</a>
+    </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <h1>Contact Us</h1>
   <form class="ui form">
     <div class="field">
       <label>First Name</label>
@@ -33,13 +46,14 @@
     <div class="field">
       <div class="ui checkbox">
         <input type="checkbox" tabindex="0" class="hidden">
+        <br>
         <label>I agree to the Terms and Conditions</label>
       </div>
     </div>
     <button class="ui button" type="submit">Submit</button>
   </form>
+  <br>
   <div class="ui container">
-    <h1>Contact Us</h1>
     <h3>ABC Toys</h3>
     <ul>
       <li>E-mail: contact@abctoys.com</li>

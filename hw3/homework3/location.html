@@ -4,47 +4,51 @@
   <meta charset="UTF-8" />
   <title>Location</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    div.fixed {
+      position: fixed;
+      top: 0;
+      padding: 0px;
+    }
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <div class="ui menu">
-    <a class="item" href="index.html">Home</a>
-    <a class="item" href="products.html">Products</a>
-    <a class="item" href="contact-us.html">Contact Us</a>
-    <a class="active item" href="location.html">Location</a>
-    <a class="item" href="extra.html">Extra</a>
-  </div>
-  <script>
-    const x = document.getElementById("demo");
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
+  <script language="javascript">
+    function getloc() {
+      navigator.geolocation.getCurrentPosition(get_coords,if_error);
+        
+      function get_coords(position)
+      {
+      latitude=position.coords.latitude;
+      longitude=position.coords.longitude;
+        
+      alert('Latitude is '+latitude+' and longitude is '+longitude);
       }
-    }
-    function showPosition(position) {
-      x.innerHTML = "Latitude: " + position.coords.latitude +
-      "<br>Longitude: " + position.coords.longitude;
-    }
-    function showError(error) {
-      switch(error.code) {
-        case error.PERMISSION_DENIED:
-          x.innerHTML = "User denied the request for Geolocation."
-          break;
-        case error.POSITION_UNAVAILABLE:
-          x.innerHTML = "Location information is unavailable."
-          break;
-        case error.TIMEOUT:
-          x.innerHTML = "The request to get user location timed out."
-          break;
-        case error.UNKNOWN_ERROR:
-          x.innerHTML = "An unknown error occurred."
-          break;
+        
+      function if_error(err)
+      {
+      if(err.code==1){alert('User Denied');}
+      if(err.code==2){alert('Position unavailable');}
+      if(err.code==3){alert('Timeout');}
       }
     } 
-  </script>
+ </script>
+</head>
+<body>
+    <div class="fixed">
+    <div class="ui menu">
+      <a class="item" href="index.html">Home</a>
+      <a class="item" href="products.html">Products</a>
+      <a class="item" href="contact-us.html">Contact Us</a>
+      <a class="active item" href="location.html">Location</a>
+      <a class="item" href="extra.html">Extra</a>
+    </div>
+    </div>
+    <br>
+    <h3>Check your Location!</h3>
+  <form action="#" method="get">
+    <input type="submit" value="Get Location" onClick="getloc();">
+  </form>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
